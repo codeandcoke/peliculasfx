@@ -16,7 +16,7 @@ public class ApplicationController {
     @FXML
     private TextField nameField;
     @FXML
-    private TextField genderField;
+    private TextField genreField;
     @FXML
     private Label statusBar;
     @FXML
@@ -37,8 +37,8 @@ public class ApplicationController {
         nameField.setEditable(true);
         nameField.setText("");
         nameField.requestFocus();
-        genderField.setEditable(true);
-        genderField.setText("");
+        genreField.setEditable(true);
+        genreField.setText("");
 
         saveButton.setDisable(false);
         newButton.setDisable(true);
@@ -67,13 +67,13 @@ public class ApplicationController {
         }
 
         String name = nameField.getText();
-        String gender = genderField.getText();
-        Movie movie = new Movie(name, gender);
+        String genre = genreField.getText();
+        Movie movie = new Movie(name, genre);
         movieList.add(movie);
         statusBar.setText("Pelicula añadida correctamente");
 
         nameField.setEditable(false);
-        genderField.setEditable(false);
+        genreField.setEditable(false);
         saveButton.setDisable(true);
         newButton.setDisable(false);
         cancelButton.setDisable(true);
@@ -90,7 +90,7 @@ public class ApplicationController {
 
         Movie movie = movieList.get(index);
         nameField.setText(movie.getName());
-        genderField.setText(movie.getGender());
+        genreField.setText(movie.getGenre());
     }
 
     @FXML
@@ -101,7 +101,7 @@ public class ApplicationController {
 
         // FIXME Evitar repeticiones
         nameField.setEditable(false);
-        genderField.setEditable(false);
+        genreField.setEditable(false);
         saveButton.setDisable(true);
         newButton.setDisable(false);
     }

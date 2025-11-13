@@ -16,7 +16,7 @@
          </font>
       </Label>
       <TextField fx:id="nameField" editable="false" layoutX="138.0" layoutY="102.0" prefHeight="26.0" prefWidth="205.0" />
-      <TextField fx:id="genderField" editable="false" layoutX="138.0" layoutY="141.0" prefHeight="26.0" prefWidth="205.0" />
+      <TextField fx:id="genreField" editable="false" layoutX="138.0" layoutY="141.0" prefHeight="26.0" prefWidth="205.0" />
       <Label layoutX="54.0" layoutY="106.0" text="Nombre" />
       <Label layoutX="54.0" layoutY="145.0" text="Género" />
       <Button fx:id="newButton" layoutX="54.0" layoutY="231.0" mnemonicParsing="false" onAction="#newMovie" text="Nuevo" />

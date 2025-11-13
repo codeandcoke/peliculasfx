@@ -3,18 +3,18 @@ package com.svalero.peliculasfx.model;
 public class Movie {
 
     private String name;
-    private String gender;
+    private String genre;
 
-    public Movie(String name, String gender) {
+    public Movie(String name, String genre) {
         this.name = name;
-        this.gender = gender;
+        this.genre = genre;
     }
 
     public String getName() {
         return name;
     }
 
-    public String getGender() {
-        return gender;
+    public String getGenre() {
+        return genre;
     }
 }
